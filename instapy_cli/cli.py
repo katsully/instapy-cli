@@ -71,7 +71,7 @@ class InstapyCli(object):
         except ClientError as e:
             print('ClientError {0!s} (Code: {1:d}, Response: {2!s})'.format(
                 e.msg, e.code, e.error_response))
-            exit(9)
+            # exit(9)
         except Exception as e:
             print('Unexpected Exception: {0!s}'.format(e))
             exit(99)
